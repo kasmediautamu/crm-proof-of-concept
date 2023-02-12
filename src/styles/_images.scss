@@ -1,0 +1,67 @@
+// general image mixin
+@mixin background-image(
+  $url,
+  $width: 100%,
+  $height: 100%,
+  $position: center center,
+  $repeat: no-repeat
+) {
+  background-image: url('../assets/' + $url);
+  background-size: $width $height;
+  background-position: $position;
+  background-repeat: $repeat;
+}
+@mixin image-logo-sm {
+  @include background-image('logo.svg',242px, 33px);
+}
+@mixin footer-logo {
+  @include background-image('footer-logo.svg', 285px, 33px);
+}
+@mixin copyright {
+  @include background-image('copyright.svg', 167px, 22px);
+}
+@mixin lock-icon {
+  @include background-image('lock.svg', 24px, 24px);
+}
+@mixin hero-bg{
+  @include background-image('bg1.png', 100%, 100%);
+}
+@mixin about-image{
+  @include background-image('about.png' ,100% ,100% )
+}
+@mixin assessment-image{
+  @include background-image('assessment.png', 100% ,100% )
+}
+@mixin plan-monitoring-image{
+  @include background-image('plan-monitoring.png', 100% ,100% )
+}
+@mixin plan-support-image{
+  @include background-image('plan-support.png', 100% ,100% )
+}
+@mixin more-icon{
+  @include background-image('arrow.svg' )
+}
+@mixin subscription-background-image{
+  @include background-image('sub-bg.png' )
+}
+@mixin tick-icon{
+  @include background-image('tick.svg',20px,20px )
+}
+@mixin paid-illustration {
+  @include background-image('paid.png' ,100%,100% )
+}
+@mixin download-icon{
+  @include background-image('download.svg',24px,24px )
+}
+@mixin online-icon{
+  @include background-image('online.svg',160px,160px )
+}
+@mixin monitoring-icon{
+  @include background-image('monitoring.svg',125px,80px )
+}
+@mixin total-icon{
+  @include background-image('total.svg',160px,160px )
+}
+@mixin consultation-illustration {
+  @include background-image('consultation.svg',400px,280px )
+}
